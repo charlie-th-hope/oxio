@@ -52,6 +52,14 @@ header {
     font-weight: bold;
 }
 
+.review-container img {
+    max-width: 100%; /* Ensures the image never exceeds the container width */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Prevents extra spacing below the image */
+    margin: 0 auto; /* Centers the image */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
 .nav-container {
     background: var(--background);
     padding: 10px 0;
