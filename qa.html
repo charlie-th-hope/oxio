@@ -1,0 +1,66 @@
+<div class="faq-container">
+    <h2>🛜OXIO: My Experience & Answers to Common Questions👋</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">1. What does OXIO offer?</button>
+        <div class="faq-answer">I use OXIO for home internet, and it's been great! They offer high-speed plans (up to 1 Gbps) with no contracts, no price hikes, and no hidden fees. They even provide a FREE eero 6 router and straightforward!</div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">2. Why is OXIO better than other internet providers?</button>
+        <div class="faq-answer">The biggest reason? No BS😂 What they advertise is exactly what you get lol no sneaky price increases after a few months, no weird extra charges, and no contracts tying you down. So if you don’t like it, you can just cancel!</div>
+    </div>
+
+    <h3>🙋Signing Up & Getting Started</h3>
+
+    <div class="faq-item">
+        <button class="faq-question">3. How do I sign up for OXIO?</button>
+        <div class="faq-answer">Super easy! I just went to their website, put in my address, and signed up online. It only took a few minutes. If you ever need help, their customer service will actually email you back lol, so it’s responsive for me!</div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">4. Do I need a technician to set it up?</button>
+        <div class="faq-answer">It depends on your place! If your home is already set up, you might just need to plug in the modem and go. Either way, they make it pretty hassle free.</div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">5. How do I activate my internet?</button>
+        <div class="faq-answer">Once everything is set up, they send an email letting you know when it's good to go. If you needed a tech, they mention that it usually takes 1-3 hours after they leave for activation, but mine just worked fine right after the activation. You may need a coaxial cable, get it from Temu! It's cheap there!</div>
+    </div>
+
+    <h3>⚙️Service & Customer Support</h3>
+
+    <div class="faq-item">
+        <button class="faq-question">6. How do I contact OXIO if I need help?</button>
+        <div class="faq-answer">
+            They don’t do phone support, but they have digital support every day from 8 AM to 10 PM. You can reach them through:<br>
+            <br>
+            - Facebook Messenger<br>
+            - Instagram DMs<br>
+            - Email: bonjour@oxio.ca<br>
+            - Text: 1-877-799-6033<br>
+            <br>
+            I’ve messaged them a couple of times, and they usually respond pretty fast.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">7. Why doesn’t OXIO have phone support?</button>
+        <div class="faq-answer">Honestly, I was skeptical about this at first, but it actually makes sense. Messaging is way faster than waiting on hold, and you can send screenshots or pictures if there’s an issue. At least they do things way faster than some public services LMAO.</div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.nextElementSibling;
+                const isActive = answer.style.display === "block";
+
+                // Close all answers first
+                document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+
+                // Toggle the clicked one
+                answer.style.display = isActive ? "none" : "block";
+            });
+        });
+    </script>
+</div>
