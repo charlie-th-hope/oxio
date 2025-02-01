@@ -28,3 +28,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+ document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.nextElementSibling;
+                const isActive = answer.style.display === "block";
+
+                // Close all answers first
+                document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+
+                // Toggle the clicked one
+                answer.style.display = isActive ? "none" : "block";
+            });
+        });
