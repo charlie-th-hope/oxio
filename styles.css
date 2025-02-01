@@ -16,6 +16,33 @@ body {
     padding: 0;
     text-align: center;
 }
+   .faq-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .faq-item {
+            background: #F2BD44;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            background: #C0F0AF;
+            color: #272727;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            outline: none;
+        }
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background: white;
+            border-top: 1px solid #ddd;
+        }
 
 header {
     background-color: var(--secondary-bg);
