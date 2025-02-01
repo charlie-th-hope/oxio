@@ -62,6 +62,13 @@ header {
     background-color: var(--secondary-bg);
 }
 
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
 .hidden {
     display: none;
 }
