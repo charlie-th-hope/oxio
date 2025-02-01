@@ -29,15 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
- document.querySelectorAll(".faq-question").forEach(button => {
-            button.addEventListener("click", () => {
-                const answer = button.nextElementSibling;
-                const isActive = answer.style.display === "block";
-
-                // Close all answers first
-                document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
-
-                // Toggle the clicked one
-                answer.style.display = isActive ? "none" : "block";
-            });
-        });
+fetch('qa.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('qa-content').innerHTML = html)
+        .catch(error => console.error('Error loading Q&A section:', error));
+    }
+    
