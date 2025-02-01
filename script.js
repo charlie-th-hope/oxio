@@ -28,10 +28,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-
-fetch('qa.html')
-        .then(response => response.text())
-        .then(html => document.getElementById('qa-content').innerHTML = html)
-        .catch(error => console.error('Error loading Q&A section:', error));
-    }
-    
