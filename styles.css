@@ -190,3 +190,9 @@ header {
     border-radius: 8px;
     align-items: center
 }
+
+        video {
+            pointer-events: none; /* Prevent right-click and interactions */
+            width: 100%;
+            height: auto;
+        }
